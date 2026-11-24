@@ -63,13 +63,19 @@
     .price-card{position:relative;padding:24px 23px 22px;display:flex;flex-direction:column}
     .price-card.pro{border-color:var(--accent);box-shadow:0 0 44px rgba(244,166,35,.3)}
     .badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--btn-ink);font-size:12px;font-weight:850;border-radius:99px;padding:7px 18px;white-space:nowrap}
-    .kit-visual{position:relative;overflow:hidden;border-radius:9px;margin:4px 0 10px;padding:24px 14px 32px;display:flex;justify-content:center;background:#0A0D12 url(assets/workshop-card-stage.webp) center/cover no-repeat}
-    .kit-visual::before{content:"";position:absolute;inset:0;background:rgba(4,6,10,.72)}
-    .price-card.pro .kit-visual::before{background:rgba(4,6,10,.42)}
-    .kit-visual .kit-main{position:relative;z-index:2;width:100%;max-width:300px;height:auto;object-fit:contain;filter:drop-shadow(0 16px 26px rgba(0,0,0,.65))}
-    .kit-visual .stack{position:absolute;z-index:1;width:24%;max-width:120px;border-radius:7px;border:1px solid #2A3340;box-shadow:0 12px 26px rgba(0,0,0,.8)}
-    .kit-visual .stack.l{left:5%;bottom:10px;transform:rotate(-8deg)}
-    .kit-visual .stack.r{right:5%;bottom:16px;transform:rotate(7deg)}
+    .kit-visual{position:relative;overflow:hidden;border-radius:9px;margin:4px 0 10px;padding:18px 14px 20px;display:flex;flex-direction:column;align-items:center;background:#0A0D12}
+    .kit-visual::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 62% 58% at 50% 44%,rgba(244,166,35,.09),transparent 72%)}
+    .price-card.pro .kit-visual::before{background:radial-gradient(ellipse 66% 62% at 50% 44%,rgba(244,166,35,.18),transparent 74%)}
+    .price-card.pro .kit-visual{border:1px solid rgba(244,166,35,.55)}
+    .kit-visual .kit-main{position:relative;z-index:2;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 14px 24px rgba(0,0,0,.65))}
+    .kit-visual .kit-main{max-width:270px}
+    .price-card.pro .kit-visual .kit-main{max-width:330px}
+    .kit-extras{position:relative;z-index:3;display:flex;align-items:flex-start;margin-top:10px}
+    .kit-extras figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:4px}
+    .kit-extras img{width:82px;max-width:34%;height:auto;object-fit:contain;border-radius:6px;border:1px solid #303A48;background:#0B0E13;box-shadow:0 8px 18px rgba(0,0,0,.55)}
+    .kit-extras figure:first-child{margin-right:-15px}
+    .kit-extras figure:first-child img{transform:rotate(-6deg)}
+    .kit-extras figcaption{font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:#98A0AB;max-width:90px;text-align:center;line-height:1.25}
     .kit-line{margin:16px 0 0;color:var(--muted);font-size:14px;font-style:italic}
     .pro-strip{margin:14px 0 8px;background:rgba(244,166,35,.12);border:1px solid rgba(244,166,35,.55);border-radius:6px;color:var(--accent);text-align:center;font-weight:900;letter-spacing:.16em;text-transform:uppercase;font-size:12.5px;padding:9px 6px}
     .pro-sub{margin:0 0 14px;color:#D4D8DE;font-size:14px;line-height:1.5;text-align:center}
@@ -142,11 +148,13 @@
     @media(max-width:600px){
       /* Mockups and covers: full image, natural height, centered, never cropped */
       .hero-image,.intro-image{width:100%;max-width:330px;height:auto;object-fit:contain;margin-inline:auto}
-      .kit-visual{padding:18px 10px 26px}
-      .kit-visual .kit-main{max-width:250px}
-      .kit-visual .stack{width:20%;bottom:7px}
-      .kit-visual .stack.l{left:3%;transform:rotate(-6deg)}
-      .kit-visual .stack.r{right:3%;transform:rotate(5deg)}
+      .kit-visual{padding:14px 10px 16px}
+      .kit-visual .kit-main{max-width:210px}
+      .price-card.pro .kit-visual .kit-main{max-width:255px}
+      .kit-extras{margin-top:8px}
+      .kit-extras img{width:66px}
+      .kit-extras figure:first-child{margin-right:-12px}
+      .kit-extras figcaption{font-size:8px;max-width:74px}
       .pro-strip{font-size:11px;letter-spacing:.1em;padding:8px 4px}
       .shield{width:120px}
       .guarantee{padding:64px 18px}
@@ -208,12 +216,12 @@
       <div class="wrap"><h2>Look inside a real starter project</h2><p class="lead">Follow a steel-and-wood side table from the first drawing to the final quote. Explore six illustrated pages with dimensions in inches, a two-bar cut map, assembly steps, finishing details and a customer estimate.</p></div>
       <div class="gallery" aria-label="Six pages from the steel-and-wood side table starter project">
         <div class="gallery-row plan-row">
-          <img src="assets/plan-1.webp" alt="Plan page 01 — Project overview" loading="lazy" decoding="async">
-          <img src="assets/plan-2.webp" alt="Plan page 02 — Dimensions &amp; layout" loading="lazy" decoding="async">
-          <img src="assets/plan-3.webp" alt="Plan page 03 — Materials &amp; cut planning" loading="lazy" decoding="async">
-          <img src="assets/plan-4.webp" alt="Plan page 04 — Frame assembly" loading="lazy" decoding="async">
-          <img src="assets/plan-5.webp" alt="Plan page 05 — Wood top &amp; finish" loading="lazy" decoding="async">
-          <img src="assets/plan-6.webp" alt="Plan page 06 — Project quote &amp; handoff" loading="lazy" decoding="async">
+          <img src="assets/plan-1.webp" alt="Plan page 01: Project overview" loading="lazy" decoding="async">
+          <img src="assets/plan-2.webp" alt="Plan page 02: Dimensions &amp; layout" loading="lazy" decoding="async">
+          <img src="assets/plan-3.webp" alt="Plan page 03: Materials &amp; cut planning" loading="lazy" decoding="async">
+          <img src="assets/plan-4.webp" alt="Plan page 04: Frame assembly" loading="lazy" decoding="async">
+          <img src="assets/plan-5.webp" alt="Plan page 05: Wood top &amp; finish" loading="lazy" decoding="async">
+          <img src="assets/plan-6.webp" alt="Plan page 06: Project quote &amp; handoff" loading="lazy" decoding="async">
           <img src="assets/plan-1.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
           <img src="assets/plan-2.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
           <img src="assets/plan-3.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
@@ -223,7 +231,7 @@
         </div>
       </div>
       <div class="wrap gallery-cta">
-        <p class="micro pages-hint">6 pages • US inches • Steel &amp; wood side table — tap any page to enlarge</p>
+        <p class="micro pages-hint">6 pages • US inches • Steel &amp; wood side table. Tap any page to enlarge.</p>
       </div>
       <div class="gallery" aria-label="Design examples from an earlier edition">
         <div class="gallery-row reverse">
@@ -258,7 +266,7 @@
       <div class="wrap"><p class="micro" style="margin-top:16px">Additional design examples from an earlier edition. Verify technical files, measurements and suitability before building.</p></div>
     </section>
 
-    <section class="section center"><div class="wrap"><h2>From an idea to a piece you can actually plan</h2><p class="lead">What a workable plan gives you before the first cut — shown through the starter side-table project included with the library.</p>
+    <section class="section center"><div class="wrap"><h2>From an idea to a piece you can actually plan</h2><p class="lead">What a workable plan gives you before the first cut, shown through the starter side table project included with the library.</p>
       <div class="features" style="text-align:left">
         <div class="feature"><b>⌂</b>Project overview</div>
         <div class="feature"><b>⌁</b>Overall dimensions</div>
@@ -282,12 +290,12 @@
           <small class="tag">Visual inspiration</small><h3>Backyard Project Ideas</h3><p>Outdoor-style pieces to keep in mind after the holiday season.</p>
         </article>
         <article class="idea-card">
-          <div class="idea-cover"><img src="assets/quote-cover-en.webp" alt="Custom Quote Worksheet cover — printable sheet for materials, hours, cost and price" loading="lazy" decoding="async"></div>
-          <small class="tag">Professional Kit</small><h3>Custom Quote Worksheet</h3><p>A printable two-page sheet for recording materials, labor, overhead and the scope of a customer request — included with the Professional Kit.</p>
+          <div class="idea-cover"><img src="assets/quote-cover-en.webp" alt="Custom Quote Worksheet cover: printable sheet for materials, hours, cost and price" loading="lazy" decoding="async"></div>
+          <small class="tag">Professional Kit</small><h3>Custom Quote Worksheet</h3><p>A printable two page sheet for recording materials, labor, overhead and the scope of a customer request. Included with the Professional Kit.</p>
         </article>
         <article class="idea-card">
-          <div class="idea-cover"><img src="assets/finish-cover-en.webp" alt="Finishing and Materials Notes cover — workshop reference with steel frame and wood top" loading="lazy" decoding="async"></div>
-          <small class="tag">Professional Kit</small><h3>Finishing &amp; Materials Notes</h3><p>A practical reference for preparation, material selection and finishing decisions — included with the Professional Kit.</p>
+          <div class="idea-cover"><img src="assets/finish-cover-en.webp" alt="Finishing and Materials Notes cover: workshop reference with steel frame and wood top" loading="lazy" decoding="async"></div>
+          <small class="tag">Professional Kit</small><h3>Finishing &amp; Materials Notes</h3><p>A practical reference for preparation, material selection and finishing decisions. Included with the Professional Kit.</p>
         </article>
       </div>
     </div></section>
@@ -313,13 +321,15 @@
           <li>Immediate digital access</li>
           <li>One payment, no subscription</li>
         </ul>
-        <a class="btn glow" id="basicBtn" href="https://pay.cakto.com.br/4smkzr9" rel="noopener">Get the Basic Kit</a><p class="micro">Digital delivery — no physical box is shipped.</p>
+        <a class="btn glow" id="basicBtn" href="https://pay.cakto.com.br/4smkzr9" rel="noopener">Get the Basic Kit</a><p class="micro">Digital delivery. No physical box is shipped.</p>
       </article>
       <article class="price-card pro reveal"><span class="badge">Most complete</span>
         <div class="kit-visual">
-          <img class="stack l" src="assets/finish-cover-en.webp" width="841" height="920" alt="" aria-hidden="true" loading="lazy" decoding="async">
-          <img class="stack r" src="assets/quote-cover-en.webp" width="869" height="920" alt="" aria-hidden="true" loading="lazy" decoding="async">
           <img class="kit-main" src="assets/pack-professional-responsive.webp" width="1200" height="900" alt="Garage Build Library Professional Kit with the side-table plan, quote worksheet and finishing notes" loading="lazy" decoding="async">
+          <div class="kit-extras">
+            <figure><img src="assets/finish-cover-en.webp" width="841" height="920" alt="Finishing and Materials Notes cover thumbnail" loading="lazy" decoding="async"><figcaption>Finishing Notes</figcaption></figure>
+            <figure><img src="assets/quote-cover-en.webp" width="869" height="920" alt="Custom Quote Worksheet cover thumbnail" loading="lazy" decoding="async"><figcaption>Quote Worksheet</figcaption></figure>
+          </div>
         </div>
         <h3>Professional Kit</h3><div class="price">$17</div><div class="for">One-time payment</div><span class="more">Only $8 more than the Basic Kit</span>
         <div class="pro-strip">Build it • Finish it • Quote it</div>
@@ -331,19 +341,19 @@
             <li><strong>Complete six-page steel-and-wood side-table plan</strong> in US inches</li>
             <li>Materials, dimensions and two-bar cut map for that build</li>
             <li>Illustrated assembly and finishing sequence</li>
-            <li><strong>Custom Quote Worksheet</strong> — printable two-page PDF</li>
-            <li><strong>Finishing &amp; Materials Notes</strong> — reference PDF</li>
+            <li><strong>Custom Quote Worksheet</strong>: a printable two page PDF</li>
+            <li><strong>Finishing &amp; Materials Notes</strong>: a reference PDF</li>
             <li>Holiday and backyard project inspiration</li>
           </ul>
         </div>
-        <a class="btn glow" href="https://pay.cakto.com.br/i4a555y_1363655" rel="noopener">Get the Professional Kit</a><p class="micro">Digital delivery — no physical box is shipped.</p>
+        <a class="btn glow" href="https://pay.cakto.com.br/i4a555y_1363655" rel="noopener">Get the Professional Kit</a><p class="micro">Digital delivery. No physical box is shipped.</p>
       </article>
     </div></div></section>
 
     <section class="guarantee center">
       <div class="wrap narrow">
-        <img class="shield" src="assets/seven-day-shield.webp" width="650" height="643" alt="Seven-day money-back guarantee shield" loading="lazy" decoding="async">
-        <h2 class="g-title">7-Day Money-Back Guarantee</h2>
+        <img class="shield" src="assets/seven-day-shield.webp" width="650" height="643" alt="Seven day money back guarantee shield" loading="lazy" decoding="async">
+        <h2 class="g-title">7 DAY MONEY BACK GUARANTEE</h2>
         <p class="lead">Explore the digital materials for seven days. If the kit is not right for you, contact us within that period to request a refund under the offer’s refund policy.</p>
       </div>
     </section>
@@ -352,11 +362,11 @@
          configured in each Cakto checkout matches this text. -->
 
     <section class="section center"><div class="wrap"><h2>Frequently asked questions</h2><div class="faq" style="text-align:left">
-      <details><summary>How is the Garage Build Library delivered?</summary><p>Everything is digital. The plans and guides are files you open on your phone, tablet or computer — nothing physical is shipped. Downloads include PDF documents you can view, print and save.</p></details>
-      <details><summary>How do I get access after payment?</summary><p>Once your payment is confirmed, you receive your access by email — usually within a few minutes. If nothing has arrived after 10 minutes, check your spam and Promotions folders, then reach out using the contact details in your order confirmation.</p></details>
-      <details><summary>Do I need welding experience?</summary><p>Yes — basic experience is expected. The library is built for people who already know how to safely cut and weld steel and use common shop tools. It provides plans and planning resources, not welding instruction.</p></details>
+      <details><summary>How is the Garage Build Library delivered?</summary><p>Everything is digital. The plans and guides are files you open on your phone, tablet or computer, and nothing physical is shipped. Downloads include PDF documents you can view, print and save.</p></details>
+      <details><summary>How do I get access after payment?</summary><p>Once your payment is confirmed, you receive your access by email, usually within a few minutes. If nothing has arrived after 10 minutes, check your spam and Promotions folders, then reach out using the contact details in your order confirmation.</p></details>
+      <details><summary>Do I need welding experience?</summary><p>Yes, basic experience is expected. The library is built for people who already know how to safely cut and weld steel and use common shop tools. It provides plans and planning resources, not welding instruction.</p></details>
       <details><summary>Why do some examples show centimeters?</summary><p>The additional design examples come from an earlier edition and use centimeters. The starter side-table project is drawn in inches. Always verify dimensions, joints and materials against your own stock before building.</p></details>
-      <details><summary>Are material costs the same everywhere?</summary><p>No. Steel, lumber, hardware and finish prices vary by region and supplier, and they change over time. Use the Custom Quote Worksheet to build quotes from your actual local costs — including consumables, shop time and overhead.</p></details>
+      <details><summary>Are material costs the same everywhere?</summary><p>No. Steel, lumber, hardware and finish prices vary by region and supplier, and they change over time. Use the Custom Quote Worksheet to build quotes from your actual local costs, including consumables, shop time and overhead.</p></details>
       <details><summary>Is any sale or profit guaranteed?</summary><p>No. Results depend on your craftsmanship, your local market and your pricing. Nothing in the Garage Build Library is a promise of sales, income or profit.</p></details>
     </div></div></section>
   </main>
@@ -364,10 +374,10 @@
   <div id="upsell" class="modal" role="dialog" aria-modal="true" aria-labelledby="upsellHead">
     <div class="modal-card">
       <button type="button" class="modal-close" id="upsellClose" aria-label="Close offer">✕</button>
-      <h3 class="modal-head" id="upsellHead">Wait — you can get the Professional Kit for $12</h3>
+      <h3 class="modal-head" id="upsellHead">Wait: you can get the Professional Kit for $12</h3>
       <img src="assets/pack-professional-responsive.webp" width="1200" height="900" alt="Garage Build Library Professional Kit: plan notebooks, quote worksheet and finishing notes" loading="lazy" decoding="async">
       <p>For just $3 more than the Basic Kit, get the complete side-table project and the workshop resources that help you plan, finish and quote your build.</p>
-      <div class="modal-price"><b>Professional Kit · Special upgrade</b><span>$12 total — one-time payment</span></div>
+      <div class="modal-price"><b>Professional Kit · Special upgrade</b><span>$12 total, one-time payment</span></div>
       <ul>
         <li>Everything in the Basic Kit</li>
         <li>Complete six-page side-table plan in US inches</li>
