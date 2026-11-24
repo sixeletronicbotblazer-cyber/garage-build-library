@@ -3,7 +3,7 @@ import asyncio, json
 from playwright.async_api import async_playwright
 
 URL="http://localhost:3000/"
-WIDTHS=[320,360,390,430,768,1280]
+WIDTHS=[320,375,390,430,768,1440]
 
 async def main():
     async with async_playwright() as p:
