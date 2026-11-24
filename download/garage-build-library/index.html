@@ -69,13 +69,19 @@
     .price-card.pro .kit-visual{border:1px solid rgba(244,166,35,.55)}
     .kit-visual .kit-main{position:relative;z-index:2;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 14px 24px rgba(0,0,0,.65))}
     .kit-visual .kit-main{max-width:270px}
-    .price-card.pro .kit-visual .kit-main{max-width:330px}
-    .kit-extras{position:relative;z-index:3;display:flex;align-items:flex-start;margin-top:10px}
-    .kit-extras figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:4px}
-    .kit-extras img{width:82px;max-width:34%;height:auto;object-fit:contain;border-radius:6px;border:1px solid #303A48;background:#0B0E13;box-shadow:0 8px 18px rgba(0,0,0,.55)}
-    .kit-extras figure:first-child{margin-right:-15px}
-    .kit-extras figure:first-child img{transform:rotate(-6deg)}
-    .kit-extras figcaption{font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:#98A0AB;max-width:90px;text-align:center;line-height:1.25}
+    .price-card.pro .kit-visual .kit-main{max-width:340px}
+    .bonus-box{background:#0C1016;border:1px solid rgba(244,166,35,.55);border-radius:12px;padding:30px 22px 26px;margin-top:8px}
+    .bonus-box h2{font-size:clamp(26px,3.8vw,36px)}
+    .bonus-sub{color:var(--muted);margin:0 auto 6px;font-size:16px}
+    .bonus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px;text-align:left}
+    .bonus-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column}
+    .bonus-card img{width:100%;max-width:225px;height:auto;object-fit:contain;margin:0 auto 12px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.5))}
+    .bonus-num{color:var(--accent);font-size:12px;font-weight:850;letter-spacing:.14em;text-transform:uppercase}
+    .bonus-card h3{font-size:18px;color:#fff;margin:6px 0 7px}
+    .bonus-card p{font-size:14px;color:var(--muted);margin:0;line-height:1.5}
+    .plus-bonus{margin:14px 0 0;color:var(--accent);font-weight:900;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+    .bonus-titles{list-style:none;padding:0;margin:8px 0 0}
+    .bonus-titles li{padding:7px 0;border-top:1px solid rgba(244,166,35,.22);color:#E8EAE0;font-size:13.5px;font-weight:700}
     .kit-line{margin:16px 0 0;color:var(--muted);font-size:14px;font-style:italic}
     .pro-strip{margin:14px 0 8px;background:rgba(244,166,35,.12);border:1px solid rgba(244,166,35,.55);border-radius:6px;color:var(--accent);text-align:center;font-weight:900;letter-spacing:.16em;text-transform:uppercase;font-size:12.5px;padding:9px 6px}
     .pro-sub{margin:0 0 14px;color:#D4D8DE;font-size:14px;line-height:1.5;text-align:center}
@@ -150,11 +156,11 @@
       .hero-image,.intro-image{width:100%;max-width:330px;height:auto;object-fit:contain;margin-inline:auto}
       .kit-visual{padding:14px 10px 16px}
       .kit-visual .kit-main{max-width:210px}
-      .price-card.pro .kit-visual .kit-main{max-width:255px}
-      .kit-extras{margin-top:8px}
-      .kit-extras img{width:66px}
-      .kit-extras figure:first-child{margin-right:-12px}
-      .kit-extras figcaption{font-size:8px;max-width:74px}
+      .price-card.pro .kit-visual .kit-main{max-width:100%}
+      .bonus-box{padding:22px 14px 20px}
+      .bonus-grid{grid-template-columns:1fr;gap:14px;margin-top:18px}
+      .bonus-card{padding:14px}
+      .bonus-card img{max-width:190px}
       .pro-strip{font-size:11px;letter-spacing:.1em;padding:8px 4px}
       .shield{width:120px}
       .guarantee{padding:64px 18px}
@@ -307,7 +313,32 @@
       <article class="benefit"><div class="icon">◷</div><h3>Prepare a quote using your actual local costs</h3><p>Record materials, consumables, shop time and overhead on the quote worksheet using the prices you really pay.</p></article>
     </div></div></section>
 
-    <section id="kits" class="section pricing alt center"><div class="wrap"><h2>Choose your kit and start building</h2><p class="lead">One-time payment · Immediate digital access · No subscription</p>
+    <section id="bonuses" class="section alt center"><div class="wrap">
+      <div class="bonus-box">
+        <h2>4 Professional Kit Bonuses</h2>
+        <p class="bonus-sub">Included with the Professional Kit at no extra cost</p>
+        <div class="bonus-grid">
+          <article class="bonus-card">
+            <img src="assets/bonus-1-show-your-build.webp" width="1024" height="1536" alt="Show Your Build bonus cover: photo and presentation checklist" loading="lazy" decoding="async">
+            <span class="bonus-num">Bonus 1</span><h3>Show Your Build</h3><p>A photo and presentation checklist for showing a finished piece clearly.</p>
+          </article>
+          <article class="bonus-card">
+            <img src="assets/bonus-2-quote-worksheet.webp" width="1024" height="1536" alt="Custom Quote Worksheet bonus cover: sheet for materials, hours, overhead and price" loading="lazy" decoding="async">
+            <span class="bonus-num">Bonus 2</span><h3>Custom Quote Worksheet</h3><p>Record materials, hours, overhead and your own local costs before preparing a quote.</p>
+          </article>
+          <article class="bonus-card">
+            <img src="assets/bonus-3-planning-mistakes.webp" width="1024" height="1536" alt="10 Planning Mistakes Before the First Cut bonus cover: checklist for measurements, stock, cuts and build order" loading="lazy" decoding="async">
+            <span class="bonus-num">Bonus 3</span><h3>10 Planning Mistakes Before the First Cut</h3><p>A practical checklist to review measurements, stock, cuts and build order.</p>
+          </article>
+          <article class="bonus-card">
+            <img src="assets/bonus-4-finishing-notes.webp" width="1024" height="1536" alt="Finishing and Materials Notes bonus cover: reference for steel, wood, preparation and finishing" loading="lazy" decoding="async">
+            <span class="bonus-num">Bonus 4</span><h3>Finishing &amp; Materials Notes</h3><p>A reference for steel, wood, preparation and finishing decisions.</p>
+          </article>
+        </div>
+      </div>
+    </div></section>
+
+    <section id="kits" class="section pricing center"><div class="wrap"><h2>Choose your kit and start building</h2><p class="lead">One-time payment · Immediate digital access · No subscription</p>
       <div class="offer-timer" id="offerTimer" hidden>Holiday offer ends in<strong id="offerCountdown"></strong></div>
       <div class="price-grid" style="text-align:left">
       <article class="price-card reveal">
@@ -325,25 +356,26 @@
       </article>
       <article class="price-card pro reveal"><span class="badge">Most complete</span>
         <div class="kit-visual">
-          <img class="kit-main" src="assets/pack-professional-responsive.webp" width="1200" height="900" alt="Garage Build Library Professional Kit with the side-table plan, quote worksheet and finishing notes" loading="lazy" decoding="async">
-          <div class="kit-extras">
-            <figure><img src="assets/finish-cover-en.webp" width="841" height="920" alt="Finishing and Materials Notes cover thumbnail" loading="lazy" decoding="async"><figcaption>Finishing Notes</figcaption></figure>
-            <figure><img src="assets/quote-cover-en.webp" width="869" height="920" alt="Custom Quote Worksheet cover thumbnail" loading="lazy" decoding="async"><figcaption>Quote Worksheet</figcaption></figure>
-          </div>
+          <img class="kit-main" src="assets/pack-professional-four-bonuses.webp" width="1536" height="1024" alt="Garage Build Library Professional Kit with the side-table plan and the four bonus guides" loading="eager" decoding="async">
         </div>
         <h3>Professional Kit</h3><div class="price">$17</div><div class="for">One-time payment</div><span class="more">Only $8 more than the Basic Kit</span>
         <div class="pro-strip">Build it • Finish it • Quote it</div>
-        <p class="pro-sub">Your project library, plus a complete illustrated build and two practical workshop PDFs.</p>
-        <p class="kit-line">Everything in the Basic Kit:</p>
+        <p class="pro-sub">Your project library, plus a complete illustrated build and four bonus guides.</p>
+        <p class="kit-line">Everything in the Basic Kit, plus the six-page side-table project and four bonuses:</p>
         <div class="only-pro">
           <h4>Only in the Professional Kit</h4>
           <ul>
-            <li><strong>Complete six-page steel-and-wood side-table plan</strong> in US inches</li>
+            <li><span><strong>Complete six-page steel-and-wood side-table plan</strong> in US inches</span></li>
             <li>Materials, dimensions and two-bar cut map for that build</li>
             <li>Illustrated assembly and finishing sequence</li>
-            <li><strong>Custom Quote Worksheet</strong>: a printable two page PDF</li>
-            <li><strong>Finishing &amp; Materials Notes</strong>: a reference PDF</li>
             <li>Holiday and backyard project inspiration</li>
+          </ul>
+          <p class="plus-bonus">Plus 4 exclusive bonuses</p>
+          <ul class="bonus-titles">
+            <li>Show Your Build</li>
+            <li>Custom Quote Worksheet</li>
+            <li>10 Planning Mistakes Before the First Cut</li>
+            <li>Finishing &amp; Materials Notes</li>
           </ul>
         </div>
         <a class="btn glow" href="https://pay.cakto.com.br/i4a555y_1363655" rel="noopener">Get the Professional Kit</a><p class="micro">Digital delivery. No physical box is shipped.</p>
@@ -376,14 +408,16 @@
       <button type="button" class="modal-close" id="upsellClose" aria-label="Close offer">✕</button>
       <h3 class="modal-head" id="upsellHead">Wait: you can get the Professional Kit for $12</h3>
       <img src="assets/pack-professional-responsive.webp" width="1200" height="900" alt="Garage Build Library Professional Kit: plan notebooks, quote worksheet and finishing notes" loading="lazy" decoding="async">
-      <p>For just $3 more than the Basic Kit, get the complete side-table project and the workshop resources that help you plan, finish and quote your build.</p>
+      <p>For just $3 more than the Basic Kit, get the complete side-table project and the four bonus guides that help you plan, finish, quote and show your build.</p>
       <div class="modal-price"><b>Professional Kit · Special upgrade</b><span>$12 total, one-time payment</span></div>
       <ul>
         <li>Everything in the Basic Kit</li>
         <li>Complete six-page side-table plan in US inches</li>
         <li>Materials and cut planning for the featured build</li>
-        <li>Custom Quote Worksheet PDF</li>
-        <li>Finishing &amp; Materials Notes PDF</li>
+        <li>Show Your Build</li>
+        <li>Custom Quote Worksheet</li>
+        <li>10 Planning Mistakes Before the First Cut</li>
+        <li>Finishing &amp; Materials Notes</li>
       </ul>
       <a class="btn glow" style="width:100%" href="https://pay.cakto.com.br/32x773c" rel="noopener">Yes, get the Professional Kit for $12</a>
       <a class="btn ghost" style="width:100%;margin-top:10px;min-height:48px" href="https://pay.cakto.com.br/4smkzr9" rel="noopener">No, continue with the Basic Kit for $9</a>
