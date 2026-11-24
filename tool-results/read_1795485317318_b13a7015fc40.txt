@@ -1,0 +1,359 @@
+     1→<!doctype html>
+     2→<html lang="en-US">
+     3→<head>
+     4→  <meta charset="utf-8">
+     5→  <meta name="viewport" content="width=device-width, initial-scale=1">
+     6→  <meta name="theme-color" content="#090B0D">
+     7→  <meta name="description" content="Digital steel-and-wood project plans and workshop resources for your home garage. Start with a six-page side-table build plan in inches, a custom quote worksheet and finishing notes.">
+     8→  <title>Garage Build Library | Steel + Wood Build Plans for Your Garage</title>
+     9→  <link rel="preload" as="image" href="assets/pack-complete-en.png">
+    10→  <style>
+    11→    :root{--bg:#090B0D;--alt:#101722;--panel:#151D28;--line:#28323F;--ink:#F4F3EF;--muted:#B7BDC6;--accent:#F4A623;--accent-hi:#FFC25E;--btn-ink:#1A1204;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
+    12→    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}img{display:block;max-width:100%}a{color:inherit}button{font:inherit}
+    13→    .ribbon{background:#0D1118;border-bottom:1px solid #232B36;text-align:center;color:var(--accent);padding:10px 12px;font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    14→    .section{padding:70px 20px}.section.alt{background:var(--alt)}.wrap{width:min(100%,1050px);margin:auto}.narrow{width:min(100%,760px);margin:auto}.center{text-align:center}
+    15→    .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:800}
+    16→    .section h2{font-size:clamp(27px,4vw,38px);line-height:1.15;letter-spacing:-.035em;color:var(--accent);margin:0 0 12px}
+    17→    .section h3{line-height:1.25}
+    18→    .lead{color:var(--muted);line-height:1.6;margin:0 auto 28px;max-width:680px}
+    19→    .section p{line-height:1.65}
+    20→    .hero{padding-top:52px;padding-bottom:75px}
+    21→    .hero h1{font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-.055em;color:var(--ink);margin:0 0 17px}
+    22→    .hero h1 .hl{color:var(--accent)}
+    23→    .hero .sub{font-size:clamp(17px,2.4vw,23px);line-height:1.45;font-weight:700;max-width:730px;margin:0 auto 12px;color:var(--ink)}
+    24→    .categories{font-size:14px;color:var(--muted);margin:0}
+    25→    .hero-image{width:min(100%,630px);margin:15px auto 11px;filter:drop-shadow(0 24px 34px rgba(0,0,0,.6))}
+    26→    .btn{border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:14px 30px;background:var(--accent);color:var(--btn-ink);border-radius:8px;font-weight:850;text-decoration:none;box-shadow:0 7px 26px rgba(244,166,35,.25);transition:transform .2s,background .2s}
+    27→    .btn:hover{transform:translateY(-2px);background:var(--accent-hi)}
+    28→    .btn:focus-visible,a:focus-visible,summary:focus-visible,.gallery-row img:focus-visible,.lightbox-close:focus-visible{outline:3px solid #fff;outline-offset:3px}
+    29→    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+    30→    .info-card,.benefit,.price-card,.idea-card{background:var(--panel);border:1px solid var(--line);border-radius:10px}
+    31→    .info-card,.benefit{padding:23px}
+    32→    .icon{color:var(--accent);font-size:25px;line-height:1}
+    33→    .info-card h3,.benefit h3{font-size:18px;margin:12px 0 7px}
+    34→    .info-card p,.benefit p{font-size:15px;color:var(--muted);margin:0}
+    35→    .pull{font-style:italic;color:#C6CBD3;max-width:690px;margin:30px auto 0}
+    36→    .intro p{max-width:735px;margin:0 auto 16px;color:#C9CED6}
+    37→    .intro .highlight{color:var(--ink)}
+    38→    .intro .highlight strong{color:var(--accent)}
+    39→    .intro-image{width:min(100%,650px);margin:12px auto 18px;filter:drop-shadow(0 18px 32px #000)}
+    40→    .gallery{overflow:hidden;margin-top:42px;display:grid;gap:18px}
+    41→    .gallery-row{display:flex;width:max-content;gap:14px;animation:marquee 46s linear infinite}
+    42→    .gallery-row.reverse{animation-direction:reverse;animation-duration:52s;margin-left:-180px}
+    43→    .gallery-row img{height:175px;width:175px;object-fit:contain;border-radius:10px;background:#151D28;border:1px solid #232D3B;padding:4px;box-shadow:0 7px 18px #0004;cursor:zoom-in}
+    44→    .gallery-row.plan-row img{width:158px;height:210px}
+    45→    .gallery:hover .gallery-row{animation-play-state:paused}
+    46→    @keyframes marquee{to{transform:translateX(-50%)}}
+    47→    .gallery-cta{margin-top:28px}
+    48→    .pages-hint{letter-spacing:.08em;font-weight:600;text-transform:uppercase;font-size:11px;margin-bottom:14px}
+    49→    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:30px 0}
+    50→    .feature{display:flex;gap:10px;align-items:center;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:8px;font-size:14px;color:#CBD1D9}
+    51→    .feature b{color:var(--accent);font-size:20px}
+    52→    .ideas-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px;text-align:left}
+    53→    .idea-card{padding:14px;display:flex;flex-direction:column}
+    54→    .idea-photo{position:relative;border-radius:8px;overflow:hidden}
+    55→    .idea-photo>img{width:100%;height:225px;object-fit:cover;border-radius:8px}
+    56→    .zoom{position:absolute;right:10px;bottom:10px;width:78px;height:78px;border-radius:50%;border:3px solid var(--accent);overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.55);background:#0B0E13}
+    57→    .zoom img{width:100%;height:100%;object-fit:cover}
+    58→    .idea-cover img{width:100%;height:225px;object-fit:contain;background:#0B0E13;border-radius:8px;padding:6px}
+    59→    .tag{display:inline-block;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:13px 0 4px}
+    60→    .idea-card h3{font-size:17px;margin:0 0 6px}
+    61→    .idea-card p{font-size:14px;color:var(--muted);margin:0;flex:1}
+    62→    .pdf-link{display:inline-block;margin-top:12px;color:var(--accent);font-weight:800;font-size:14px;text-decoration:none;border-bottom:2px solid rgba(244,166,35,.35)}
+    63→    .pdf-link:hover{border-bottom-color:var(--accent)}
+    64→    .pricing{padding-top:78px}
+    65→    .price-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;max-width:900px;margin:36px auto 0;align-items:stretch}
+    66→    .price-card{position:relative;padding:24px 23px 22px;display:flex;flex-direction:column}
+    67→    .price-card.pro{border-color:#A5742A;box-shadow:0 0 30px rgba(244,166,35,.12)}
+    68→    .badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--btn-ink);font-size:12px;font-weight:850;border-radius:99px;padding:7px 18px;white-space:nowrap}
+    69→    .price-card img{height:230px;width:100%;object-fit:contain}
+    70→    .price-card h3{text-align:center;font-size:22px;margin:5px 0}
+    71→    .price{font-size:43px;color:var(--accent);font-weight:900;text-align:center;line-height:1.1}
+    72→    .for{text-align:center;color:var(--muted);margin-top:6px;font-size:14px}
+    73→    .price-card ul{list-style:none;padding:0;margin:22px 0;flex:1}
+    74→    .price-card li{display:flex;gap:9px;align-items:flex-start;color:#D4D8DE;font-size:14px;line-height:1.38;margin:0 0 11px}
+    75→    .price-card li::before{content:'✓';color:var(--accent);font-weight:900}
+    76→    .price-card .btn{width:100%;min-height:53px}
+    77→    .micro{font-size:12px;color:#98A0AB;text-align:center;margin:9px 0 0}
+    78→    .faq{max-width:900px;margin:25px auto 0}
+    79→    .faq details{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin:8px 0}
+    80→    .faq summary{list-style:none;cursor:pointer;padding:17px 21px;color:var(--accent);font-weight:750;display:flex;justify-content:space-between;gap:20px}
+    81→    .faq summary::-webkit-details-marker{display:none}
+    82→    .faq summary::after{content:'⌄'}
+    83→    .faq details[open] summary::after{content:'⌃'}
+    84→    .faq details p{border-top:1px solid var(--line);margin:0;padding:16px 21px;color:#C6CBD3;font-size:15px}
+    85→    .footer{padding:30px 20px;text-align:center;border-top:1px solid #1D242E;color:#7A8290;font-size:12px}
+    86→    .notice{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#1B2635;color:#fff;border:1px solid var(--accent);border-radius:9px;padding:15px 20px;z-index:70;box-shadow:0 12px 30px #0008;max-width:min(92vw,550px);text-align:center;display:none}
+    87→    .notice.show{display:block}
+    88→    .lightbox{position:fixed;inset:0;background:rgba(5,7,10,.93);display:none;align-items:center;justify-content:center;z-index:60;padding:26px;cursor:zoom-out}
+    89→    .lightbox.open{display:flex}
+    90→    .lightbox-fig{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;max-width:min(94vw,1000px)}
+    91→    .lightbox img{max-width:min(94vw,1000px);max-height:80vh;border-radius:8px;box-shadow:0 24px 60px #000c;cursor:default}
+    92→    .lightbox-fig figcaption{display:flex;gap:14px;align-items:baseline;justify-content:center;font-size:14px}
+    93→    #lightbox-caption{color:var(--ink);font-weight:750}
+    94→    #lightbox-count{color:#8A919C;font-size:12px;font-weight:700}
+    95→    .lightbox-close,.lightbox-nav{position:absolute;border-radius:50%;border:2px solid var(--accent);background:#131A24;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center}
+    96→    .lightbox-close{top:16px;right:16px;width:46px;height:46px;font-size:20px;line-height:1}
+    97→    .lightbox-nav{top:50%;transform:translateY(-50%);width:52px;height:52px;font-size:30px;line-height:1;font-family:Georgia,serif}
+    98→    .lightbox-nav.prev{left:16px}
+    99→    .lightbox-nav.next{right:16px}
+   100→    .lightbox-close:hover,.lightbox-nav:hover{background:var(--accent);color:var(--btn-ink)}
+   101→    @media(max-width:680px){.lightbox-nav{width:44px;height:44px;font-size:26px}.lightbox-nav.prev{left:8px}.lightbox-nav.next{right:8px}.lightbox img{max-height:76vh}}
+   102→    @media(max-width:900px){.ideas-grid{grid-template-columns:repeat(2,1fr)}}
+   103→    @media(max-width:680px){
+   104→      .section{padding:50px 18px}.hero{padding-top:39px}.hero-image{margin:13px auto}
+   105→      .grid2,.price-grid,.ideas-grid{grid-template-columns:1fr}
+   106→      .features{grid-template-columns:1fr 1fr}
+   107→      .price-grid{gap:31px}
+   108→      .price-card img{height:195px}
+   109→      .gallery-row img{width:132px;height:140px}
+   110→      .gallery-row.plan-row img{width:112px;height:150px}
+   111→      .idea-photo>img,.idea-cover img{height:190px}
+   112→      .zoom{width:62px;height:62px;right:8px;bottom:8px}
+   113→      .section h2{font-size:29px}
+   114→    }
+   115→    @media(max-width:390px){.features{grid-template-columns:1fr}.hero h1{font-size:39px}}
+   116→    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+   117→  </style>
+   118→</head>
+   119→<body>
+   120→  <div class="ribbon">STEEL + WOOD PROJECT IDEAS FOR YOUR GARAGE</div>
+   121→  <main>
+   122→    <section class="section hero center"><div class="wrap">
+   123→      <p class="eyebrow">A practical starting point for holiday builds</p>
+   124→      <h1>Build something <span class="hl">worth showing</span> this holiday season.</h1>
+   125→      <p class="sub">Open a steel-and-wood project, plan your materials, build a piece for your home or portfolio, and use it to start conversations about custom work.</p>
+   126→      <p class="categories">Furniture • Shelving • Patio pieces • Workshop builds</p>
+   127→      <img class="hero-image" src="assets/pack-complete-en.png" width="1000" height="1000" alt="Garage Build Library Complete Kit mockup: plan notebooks and measuring tools on a workshop bench" fetchpriority="high">
+   128→      <a class="btn" href="#gallery">Explore the projects</a>
+   129→      <p class="micro">Digital plans and workshop resources. No physical box is shipped.</p>
+   130→    </div></section>
+   131→
+   132→    <section class="section alt center"><div class="wrap"><h2>Your tools are ready. What will you build next?</h2><p class="lead">The welder is paid for, the saw cuts true, and the skills are there. The missing piece is a plan worth clearing the bench for.</p>
+   133→      <div class="grid2" style="text-align:left">
+   134→        <article class="info-card"><div class="icon">✎</div><h3>Too many ideas, no starting point</h3><p>A free weekend disappears while you search for a project that fits your tools and available time.</p></article>
+   135→        <article class="info-card"><div class="icon">⌁</div><h3>Materials bought before the cuts are planned</h3><p>A missing measurement can turn one shop trip into two.</p></article>
+   136→        <article class="info-card"><div class="icon">▣</div><h3>A finished piece without a clear quote</h3><p>Materials, consumables, finish and shop time all need a place in your price.</p></article>
+   137→        <article class="info-card"><div class="icon">◌</div><h3>Nothing clear to show a potential customer</h3><p>A photographed build gives someone a concrete example of what you can make.</p></article>
+   138→      </div><p class="pull">A weekend with a plan ends with a piece you can photograph. A weekend without one ends with more browsing.</p>
+   139→    </div></section>
+   140→
+   141→    <section class="section intro center"><div class="narrow"><h2>Meet Garage Build Library</h2><p>A digital collection organized around metalworking projects you can explore from your phone or computer. Start with a small steel-and-wood furniture build, then consider other categories as your workshop and portfolio grow.</p><p class="highlight"><strong>Build one piece. Photograph the result. Use it as the starting point for your next custom-work conversation.</strong></p><img class="intro-image" src="assets/pack-complete-en.png" width="1000" height="1000" alt="Garage Build Library digital collection: plan notebooks and tools arranged around the library book" loading="lazy" decoding="async"><a class="btn" href="#gallery">Look inside the plans</a></div></section>
+   142→
+   143→    <section id="gallery" class="section alt center">
+   144→      <div class="wrap"><h2>Look inside a real starter project</h2><p class="lead">Follow a steel-and-wood side table from the first drawing to the final quote. Explore six illustrated pages with dimensions in inches, a two-bar cut map, assembly steps, finishing details and a customer estimate.</p></div>
+   145→      <div class="gallery" aria-label="Six pages from the steel-and-wood side table starter project">
+   146→        <div class="gallery-row plan-row">
+   147→          <img src="assets/plan-1.webp" alt="Plan page 01 — Project overview" loading="lazy" decoding="async">
+   148→          <img src="assets/plan-2.webp" alt="Plan page 02 — Dimensions &amp; layout" loading="lazy" decoding="async">
+   149→          <img src="assets/plan-3.webp" alt="Plan page 03 — Materials &amp; cut planning" loading="lazy" decoding="async">
+   150→          <img src="assets/plan-4.webp" alt="Plan page 04 — Frame assembly" loading="lazy" decoding="async">
+   151→          <img src="assets/plan-5.webp" alt="Plan page 05 — Wood top &amp; finish" loading="lazy" decoding="async">
+   152→          <img src="assets/plan-6.webp" alt="Plan page 06 — Project quote &amp; handoff" loading="lazy" decoding="async">
+   153→          <img src="assets/plan-1.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   154→          <img src="assets/plan-2.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   155→          <img src="assets/plan-3.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   156→          <img src="assets/plan-4.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   157→          <img src="assets/plan-5.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   158→          <img src="assets/plan-6.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   159→        </div>
+   160→      </div>
+   161→      <div class="wrap gallery-cta">
+   162→        <p class="micro pages-hint">6 pages • US inches • Steel &amp; wood side table</p>
+   163→        <a class="btn" href="guides/side-table-six-page-preview.pdf" target="_blank" rel="noopener">Open the complete sample plan</a>
+   164→        <p class="micro">PDF · 6 pages · opens in a new tab</p>
+   165→      </div>
+   166→      <div class="gallery" aria-label="Design examples from an earlier edition">
+   167→        <div class="gallery-row reverse">
+   168→          <img src="assets/p1.webp" alt="Industrial bookshelf design example from an earlier edition" loading="lazy" decoding="async">
+   169→          <img src="assets/p8.webp" alt="Steel gate design example from an earlier edition" loading="lazy" decoding="async">
+   170→          <img src="assets/p3.webp" alt="Steel bed design example from an earlier edition" loading="lazy" decoding="async">
+   171→          <img src="assets/p6.webp" alt="Industrial table design example from an earlier edition" loading="lazy" decoding="async">
+   172→          <img src="assets/p9.webp" alt="Industrial stool design example from an earlier edition" loading="lazy" decoding="async">
+   173→          <img src="assets/p4.webp" alt="Industrial TV stand design example from an earlier edition" loading="lazy" decoding="async">
+   174→          <img src="assets/p1.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   175→          <img src="assets/p8.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   176→          <img src="assets/p3.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   177→          <img src="assets/p6.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   178→          <img src="assets/p9.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   179→          <img src="assets/p4.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   180→        </div>
+   181→        <div class="gallery-row">
+   182→          <img src="assets/p2.webp" alt="Bed frame design example from an earlier edition" loading="lazy" decoding="async">
+   183→          <img src="assets/p5.webp" alt="Pull-up bar design example from an earlier edition" loading="lazy" decoding="async">
+   184→          <img src="assets/p10.webp" alt="Steel BBQ grill design example from an earlier edition" loading="lazy" decoding="async">
+   185→          <img src="assets/p7.webp" alt="Steel chair design example from an earlier edition" loading="lazy" decoding="async">
+   186→          <img src="assets/p3.webp" alt="Steel bed design example from an earlier edition" loading="lazy" decoding="async">
+   187→          <img src="assets/p4.webp" alt="Industrial TV stand design example from an earlier edition" loading="lazy" decoding="async">
+   188→          <img src="assets/p2.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   189→          <img src="assets/p5.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   190→          <img src="assets/p10.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   191→          <img src="assets/p7.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   192→          <img src="assets/p3.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   193→          <img src="assets/p4.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+   194→        </div>
+   195→      </div>
+   196→      <div class="wrap"><p class="micro" style="margin-top:16px">Additional design examples from an earlier edition. Verify technical files, measurements and suitability before building.</p></div>
+   197→    </section>
+   198→
+   199→    <section class="section center"><div class="wrap"><h2>From an idea to a piece you can actually plan</h2><p class="lead">What a workable plan gives you before the first cut — shown through the starter side-table project included with the library.</p>
+   200→      <div class="features" style="text-align:left">
+   201→        <div class="feature"><b>⌂</b>Project overview</div>
+   202→        <div class="feature"><b>⌁</b>Overall dimensions</div>
+   203→        <div class="feature"><b>▤</b>Stock and material notes</div>
+   204→        <div class="feature"><b>✂</b>Cut planning</div>
+   205→        <div class="feature"><b>▣</b>Assembly sequence</div>
+   206→        <div class="feature"><b>◈</b>Finishing considerations</div>
+   207→        <div class="feature"><b>◷</b>Photo-ready result</div>
+   208→        <div class="feature"><b>✎</b>Your own customer quote</div>
+   209→      </div>
+   210→    </div></section>
+   211→
+   212→    <section class="section alt center"><div class="wrap"><h2>Start with a gift-worthy build. Keep the workshop tools close.</h2><p class="lead">Build something small, photograph it well, and let it start conversations — this season and beyond.</p>
+   213→      <div class="ideas-grid">
+   214→        <article class="idea-card">
+   215→          <div class="idea-photo"><img src="assets/holiday.webp" alt="Holiday scene: black steel log rack with firewood beside a steel-and-wood bench" loading="lazy" decoding="async"><span class="zoom" aria-hidden="true"><img src="assets/holiday-detail.webp" alt="" loading="lazy" decoding="async"></span></div>
+   216→          <small class="tag">Visual inspiration</small><h3>Holiday Build Ideas</h3><p>Small steel-and-wood pieces you could build, photograph and present as custom gift ideas.</p>
+   217→        </article>
+   218→        <article class="idea-card">
+   219→          <div class="idea-photo"><img src="assets/patio.webp" alt="Backyard patio with a black steel-and-wood side table and a two-tier plant stand" loading="lazy" decoding="async"><span class="zoom" aria-hidden="true"><img src="assets/patio-detail.webp" alt="" loading="lazy" decoding="async"></span></div>
+   220→          <small class="tag">Visual inspiration</small><h3>Backyard Project Ideas</h3><p>Outdoor-style pieces to keep in mind after the holiday season.</p>
+   221→        </article>
+   222→        <article class="idea-card">
+   223→          <div class="idea-cover"><img src="assets/quote-cover-en.webp" alt="Custom Quote Worksheet cover — printable sheet for materials, hours, cost and price" loading="lazy" decoding="async"></div>
+   224→          <small class="tag">Printable PDF</small><h3>Custom Quote Worksheet</h3><p>A printable two-page sheet for recording materials, labor, overhead and the scope of a customer request.</p><a class="pdf-link" href="guides/custom-quote-worksheet.pdf" target="_blank" rel="noopener">Open the worksheet PDF →</a>
+   225→        </article>
+   226→        <article class="idea-card">
+   227→          <div class="idea-cover"><img src="assets/finish-cover-en.webp" alt="Finishing and Materials Notes cover — workshop reference with steel frame and wood top" loading="lazy" decoding="async"></div>
+   228→          <small class="tag">Reference PDF</small><h3>Finishing &amp; Materials Notes</h3><p>A practical reference for preparation, material selection and finishing decisions.</p><a class="pdf-link" href="guides/finishing-materials-notes.pdf" target="_blank" rel="noopener">Open the finishing notes PDF →</a>
+   229→        </article>
+   230→      </div>
+   231→    </div></section>
+   232→
+   233→    <section class="section center"><div class="wrap"><h2>Make your next workshop session count</h2><p class="lead">Turn a free evening into a planned, built and photographed piece.</p><div class="grid2" style="text-align:left">
+   234→      <article class="benefit"><div class="icon">✎</div><h3>Choose a build you can picture</h3><p>Start with the side-table project or browse the design examples until a piece matches your tools, your space and the time you actually have.</p></article>
+   235→      <article class="benefit"><div class="icon">✂</div><h3>Plan your cuts and materials</h3><p>Work from the material notes and cut list before you buy stock, so a missing measurement doesn't turn one shop trip into two.</p></article>
+   236→      <article class="benefit"><div class="icon">▣</div><h3>Photograph a finished example</h3><p>A clean photo of a finished piece gives family, friends and potential customers something concrete to react to.</p></article>
+   237→      <article class="benefit"><div class="icon">◷</div><h3>Prepare a quote using your actual local costs</h3><p>Record materials, consumables, shop time and overhead on the quote worksheet using the prices you really pay.</p></article>
+   238→    </div></div></section>
+   239→
+   240→    <section id="kits" class="section pricing alt center"><div class="wrap"><h2>Choose your kit and start building</h2><p class="lead">One-time payment · Immediate digital access · No subscription</p><div class="price-grid" style="text-align:left">
+   241→      <article class="price-card"><img src="assets/pack-starter-en.png" width="1000" height="1000" alt="Garage Build Library Starter Kit mockup: box and project plan notebooks" loading="lazy" decoding="async"><h3>Starter Kit</h3><div class="price">$9</div><div class="for">one-time payment</div>
+   242→        <ul>
+   243→          <li>A starter selection of digital plans and design examples</li>
+   244→          <li>Furniture, shelving, patio and workshop examples to browse</li>
+   245→          <li>Organized digital access from your phone or computer</li>
+   246→          <li>Immediate access after payment</li>
+   247→          <li>One-time payment — no subscription</li>
+   248→        </ul>
+   249→        <a class="btn checkout" data-plan="starter" href="#kits">Get the Starter Kit</a><p class="micro">Digital delivery — no physical box is shipped.</p>
+   250→      </article>
+   251→      <article class="price-card pro"><span class="badge">Most complete</span><img src="assets/pack-complete-en.png" width="1000" height="1000" alt="Garage Build Library Complete Kit mockup: book, plan notebooks and measuring tools" loading="lazy" decoding="async"><h3>Complete Kit</h3><div class="price">$17</div><div class="for">one-time payment</div>
+   252→        <ul>
+   253→          <li>Everything in the Starter Kit</li>
+   254→          <li>The complete six-page steel-and-wood side-table build plan, drawn in inches</li>
+   255→          <li><strong>Custom Quote Worksheet</strong> — printable two-page sheet (PDF)</li>
+   256→          <li><strong>Finishing &amp; Materials Notes</strong> — preparation and finishing reference (PDF)</li>
+   257→          <li>Holiday gift-build ideas to spark the season (visual inspiration)</li>
+   258→          <li>Organized digital access on phone or computer</li>
+   259→          <li>Immediate access after payment · one-time payment</li>
+   260→        </ul>
+   261→        <a class="btn checkout" data-plan="complete" href="#kits">Get the Complete Kit</a><p class="micro">Digital delivery — no physical box is shipped.</p>
+   262→      </article>
+   263→    </div></div></section>
+   264→
+   265→    <!-- The 7-day money-back guarantee from the original French page was intentionally
+   266→         omitted: it should only be published once the refund condition is confirmed
+   267→         in the offer and configured in the checkout. -->
+   268→
+   269→    <section class="section center"><div class="wrap"><h2>Frequently asked questions</h2><div class="faq" style="text-align:left">
+   270→      <details><summary>How is the Garage Build Library delivered?</summary><p>Everything is digital. The plans and guides are files you open on your phone, tablet or computer — nothing physical is shipped. Downloads include PDF documents you can view, print and save.</p></details>
+   271→      <details><summary>How do I get access after payment?</summary><p>Once your payment is confirmed, you receive your access by email — usually within a few minutes. If nothing has arrived after 10 minutes, check your spam and Promotions folders, then reach out using the contact details in your order confirmation.</p></details>
+   272→      <details><summary>Do I need welding experience?</summary><p>Yes — basic experience is expected. The library is built for people who already know how to safely cut and weld steel and use common shop tools. It provides plans and planning resources, not welding instruction.</p></details>
+   273→      <details><summary>Why do some examples show centimeters?</summary><p>The additional design examples come from an earlier edition and use centimeters. The starter side-table project is drawn in inches. Always verify dimensions, joints and materials against your own stock before building.</p></details>
+   274→      <details><summary>Are material costs the same everywhere?</summary><p>No. Steel, lumber, hardware and finish prices vary by region and supplier, and they change over time. Use the Custom Quote Worksheet to build quotes from your actual local costs — including consumables, shop time and overhead.</p></details>
+   275→      <details><summary>Is any sale or profit guaranteed?</summary><p>No. Results depend on your craftsmanship, your local market and your pricing. Nothing in the Garage Build Library is a promise of sales, income or profit.</p></details>
+   276→    </div></div></section>
+   277→  </main>
+   278→  <footer class="footer">© <span id="year"></span> Garage Build Library · Digital plans and workshop resources · No physical product is shipped</footer>
+   279→  <div id="notice" class="notice" role="status" aria-live="polite"></div>
+   280→  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged plan page">
+   281→    <button type="button" class="lightbox-close" aria-label="Close enlarged view">✕</button>
+   282→    <button type="button" class="lightbox-nav prev" aria-label="Previous page">‹</button>
+   283→    <figure class="lightbox-fig">
+   284→      <img id="lightbox-img" src="" alt="">
+   285→      <figcaption><span id="lightbox-caption"></span><span id="lightbox-count"></span></figcaption>
+   286→    </figure>
+   287→    <button type="button" class="lightbox-nav next" aria-label="Next page">›</button>
+   288→  </div>
+   289→  <script>
+   290→    // Before launch: paste the real https:// checkout URLs for each kit below.
+   291→    // Until both URLs are set, the buttons stay in preview mode and show a notice.
+   292→    const CONFIG={checkoutStarter:'',checkoutComplete:''};
+   293→    document.getElementById('year').textContent=new Date().getFullYear();
+   294→
+   295→    // Checkout buttons
+   296→    document.querySelectorAll('.checkout').forEach(link=>link.addEventListener('click',event=>{
+   297→      const destination=link.dataset.plan==='starter'?CONFIG.checkoutStarter:CONFIG.checkoutComplete;
+   298→      if(destination&&/^https:\/\//i.test(destination)){link.href=destination;return}
+   299→      event.preventDefault();
+   300→      const notice=document.getElementById('notice');
+   301→      notice.textContent='Checkout for this kit isn\u2019t connected yet \u2014 this is a preview build.';
+   302→      notice.classList.add('show');
+   303→      setTimeout(()=>notice.classList.remove('show'),4500);
+   304→    }));
+   305→
+   306→    // Lightbox: open any gallery image enlarged; close with the button, the backdrop or Esc;
+   307→    // navigate between the unique pages of the clicked row with the prev/next buttons or arrow keys.
+   308→    (function(){
+   309→      const lb=document.getElementById('lightbox'),img=document.getElementById('lightbox-img'),
+   310→            caption=document.getElementById('lightbox-caption'),counter=document.getElementById('lightbox-count'),
+   311→            closeBtn=lb.querySelector('.lightbox-close'),prevBtn=lb.querySelector('.lightbox-nav.prev'),nextBtn=lb.querySelector('.lightbox-nav.next');
+   312→      const rows=Array.from(document.querySelectorAll('.gallery-row'));
+   313→      // unique pages per row, in visual order (duplicated marquee copies skipped)
+   314→      const rowLists=rows.map(row=>{
+   315→        const seen=new Set(),items=[];
+   316→        row.querySelectorAll('img').forEach(el=>{
+   317→          const src=el.getAttribute('src');
+   318→          if(!seen.has(src)){seen.add(src);items.push({src:src,alt:el.alt})}
+   319→        });
+   320→        return items;
+   321→      });
+   322→      let list=[],idx=0,lastFocus=null;
+   323→      function show(){
+   324→        const item=list[idx];
+   325→        img.src=item.src;img.alt=item.alt||'Enlarged plan page';
+   326→        caption.textContent=item.alt||'';
+   327→        counter.textContent=(idx+1)+' / '+list.length;
+   328→        prevBtn.style.display=list.length>1?'flex':'none';
+   329→        nextBtn.style.display=list.length>1?'flex':'none';
+   330→      }
+   331→      function open(el){
+   332→        const row=el.closest('.gallery-row');
+   333→        list=rowLists[rows.indexOf(row)]||[{src:el.getAttribute('src'),alt:el.alt}];
+   334→        idx=Math.max(0,list.findIndex(i=>i.src===el.getAttribute('src')));
+   335→        lastFocus=document.activeElement;show();lb.classList.add('open');document.body.style.overflow='hidden';closeBtn.focus();
+   336→      }
+   337→      function close(){lb.classList.remove('open');img.src='';img.alt='';caption.textContent='';counter.textContent='';document.body.style.overflow='';if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+   338→      function step(d){idx=(idx+d+list.length)%list.length;show()}
+   339→      rows.forEach(row=>row.querySelectorAll('img').forEach(el=>{
+   340→        el.tabIndex=0;el.setAttribute('role','button');
+   341→        el.setAttribute('aria-label','Open enlarged view: '+(el.alt||'plan page'));
+   342→        el.addEventListener('click',()=>open(el));
+   343→        el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(el)}});
+   344→      }));
+   345→      closeBtn.addEventListener('click',close);
+   346→      prevBtn.addEventListener('click',e=>{e.stopPropagation();step(-1)});
+   347→      nextBtn.addEventListener('click',e=>{e.stopPropagation();step(1)});
+   348→      lb.addEventListener('click',e=>{if(e.target===lb)close()});
+   349→      document.addEventListener('keydown',e=>{
+   350→        if(!lb.classList.contains('open'))return;
+   351→        if(e.key==='Escape')close();
+   352→        else if(e.key==='ArrowLeft')step(-1);
+   353→        else if(e.key==='ArrowRight')step(1);
+   354→      });
+   355→    })();
+   356→  </script>
+   357→</body>
+   358→</html>
+   359→
